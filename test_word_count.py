@@ -9,5 +9,9 @@ def test_count_words_single():
     assert count_words("hello") == 1
 
 
+def test_count_words_empty_string():
+    assert count_words("") == 0
+
+
 def test_most_common_word():
     assert most_common_word("the cat sat on the mat") == "the"
